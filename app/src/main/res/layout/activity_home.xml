@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".HomeActivity">
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="247dp"
+        android:layout_height="79dp"
+        android:backgroundTint="@color/yellow"
+        android:gravity="center"
+        android:text="buscando conductor"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.479" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="770dp"
+        android:layout_height="271dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513"
+        app:srcCompat="@drawable/maps" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="282dp"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:text="velmax"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="@android:color/holo_red_dark"
+        android:shadowColor="@android:color/darker_gray"
+        android:shadowRadius="5"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.232" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/imageDelivery"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/delivery"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
